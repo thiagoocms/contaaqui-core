@@ -24,6 +24,10 @@ public class Wallet extends AbstractAuditingEntity {
     public Wallet() {
     }
 
+    public Wallet(Long id) {
+        this.id = id;
+    }
+
     @PrePersist
     protected void onPersist() {
         if (balance == null) {

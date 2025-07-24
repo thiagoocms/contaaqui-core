@@ -15,7 +15,8 @@ public record TransactionDTO(
         @NotNull
         TransactionTypeEnum type,
         @NotNull
-        BigDecimal amount
+        BigDecimal amount,
+        boolean deleted
 ) {
 
 }
