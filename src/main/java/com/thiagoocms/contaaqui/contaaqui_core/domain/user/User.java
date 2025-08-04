@@ -27,7 +27,7 @@ public class User extends AbstractAuditingEntity {
     @Column(name = "login", length = 50, nullable = false)
     private String login;
 
-    @Column(name = "password", length = 25, nullable = false)
+    @Column(name = "password", length = 255, nullable = false)
     private String password;
 
     @Column(name = "email", length = 300, nullable = false)
